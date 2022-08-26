@@ -1,1 +1,1 @@
-streamlit run "D:\Data Science\Deployment\Loan Prediction\loan_prediction.py"
+streamlit run "loan_prediction.py"
