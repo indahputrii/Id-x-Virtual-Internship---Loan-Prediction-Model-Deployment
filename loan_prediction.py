@@ -26,7 +26,7 @@ with st.sidebar:
 # -------------------------------------------------- ABOUT THE DATASET ------------------------------------------------------
 msno_raw = Image.open("msno_raw.png")
 msno_clean = Image.open("msno_clean.png")
-approve = Image.open("approved.jpg")
+approve = Image.open("Approved.jpg")
 reject = Image.open("reject.jpg")
 
 if (selected == 'About The Dataset'):
@@ -123,7 +123,6 @@ else:
         verif_yes = 0
         verif_not = 0
              
-    
     # get purpose 
     purpose = st.selectbox(
         "Loan Purpose", ['Credit Card', 'Debt Consolidation', 'Home Improvement', 'Other'],
