@@ -13,7 +13,7 @@ from PIL import Image
 from sklearn.preprocessing import RobustScaler
 
 # loading the models and data 
-loan_prediction = pickle.load(open('D:/Data Science/Deployment/Loan Prediction/loan_prediction.sav', 'rb'))
+loan_prediction = pickle.load(open('loan_prediction.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
@@ -24,14 +24,14 @@ with st.sidebar:
                            default_index= 0)
     
 # -------------------------------------------------- ABOUT THE DATASET ------------------------------------------------------
-msno_raw = Image.open("D:/Data Science/Deployment/Loan Prediction/msno_raw.png")
-msno_clean = Image.open("D:/Data Science/Deployment/Loan Prediction/msno_clean.png")
-approve = Image.open("D:/Data Science/Deployment/Loan Prediction/approved.jpg")
-reject = Image.open("D:/Data Science/Deployment/Loan Prediction/reject.jpg")
+msno_raw = Image.open("msno_raw.png")
+msno_clean = Image.open("msno_clean.png")
+approve = Image.open("approved.jpg")
+reject = Image.open("reject.jpg")
 
 if (selected == 'About The Dataset'):
     st.title("Predicting Loan Payment")
-    img = Image.open("D:/Data Science/Deployment/Loan Prediction/loan.jpg")
+    img = Image.open("loan.jpg")
     st.image(img)
     st.write("""
              This application is made to provide an overview of loan_data_2007_2014 from Kaggle. It is a collection of data that provides customer information on 
